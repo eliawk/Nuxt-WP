@@ -10,7 +10,7 @@ query PostList {
           node {
             id
             mediaItemUrl
-            srcSet(size: POST_THUMBNAIL)
+            srcSet(size: THUMBNAIL)
             mediaDetails {
               sizes {
                 name
