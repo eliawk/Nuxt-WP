@@ -1,6 +1,12 @@
 <template>
-  <div class="container">
-    <h1>Blog list</h1>
+  <div class="wrapper">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col">
+          <h1>Blog list</h1>
+        </div>
+      </div>
+    </div>
     <div v-if="$apollo.loading">Loading...</div>
     <div v-else>
       <div class="container">
