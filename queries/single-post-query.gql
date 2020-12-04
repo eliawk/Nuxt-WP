@@ -1,0 +1,20 @@
+query SinglePost($slug: ID!) {
+  post(id: $slug, idType: SLUG) {
+    id
+    title
+    content
+    slug
+    post_details {
+      subtitle
+      year
+      block{
+        image {
+          id
+          mediaItemUrl
+          caption
+        }
+        text
+      }
+    }
+  }
+}

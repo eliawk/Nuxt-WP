@@ -1,0 +1,38 @@
+query PostList {
+  posts {
+    edges {
+      node {
+        id
+        title
+        excerpt
+        slug
+        featuredImage {
+          node {
+            id
+            mediaItemUrl
+            srcSet(size: POST_THUMBNAIL)
+            mediaDetails {
+              sizes {
+                name
+                sourceUrl
+              }
+            }
+          }
+          
+        }
+        post_details {
+          subtitle
+          year
+          block{
+            image {
+              id
+              mediaItemUrl
+              caption
+            }
+            text
+          }
+        }
+      }
+    }
+  }
+}
