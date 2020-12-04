@@ -48,7 +48,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://test.eliapellegrino.it/graphql',
+        httpEndpoint: 'https://test.eliapellegrino.it/graphql',
         // browserHttpEndpoint: '/graphql',
       },
     },
