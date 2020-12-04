@@ -1,0 +1,6 @@
+query SinglePage($slug: String) {
+  pageBy(uri: $slug) {
+    title
+    content
+  }
+}
