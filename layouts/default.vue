@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header />
     <Nuxt />
   </div>
 </template>
@@ -51,5 +52,11 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+blockquote {
+  font-size: 2em;
+  font-style: italic;
+  margin: 30px 0;
 }
 </style>
