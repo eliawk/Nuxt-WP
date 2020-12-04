@@ -8,7 +8,7 @@
       <h5 class="card-title">{{ post.title }}</h5>
       <HtmlRender :html="post.excerpt" class="card-text" />
       <NuxtLink :to="'/posts/' + post.slug" class="btn btn-primary">
-        <h3>More</h3>
+        Read More
       </NuxtLink>
     </div>
   </div>
@@ -36,7 +36,7 @@ export default {
     thumbnail() {
       const sizesArray = Array.from(JSON.parse(JSON.stringify(this.sizes)))
       const thumb = sizesArray.filter((item) => {
-        return item.name === 'thumbnail'
+        return item.name === 'medium'
       })
 
       return thumb[0] ? thumb[0].sourceUrl : ''
