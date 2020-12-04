@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <NuxtLink to="/" class="btn btn-primary">Home</NuxtLink>
-
     <div v-if="$apollo.loading">Loading...</div>
 
     <div v-else>
